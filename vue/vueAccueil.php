@@ -1,9 +1,12 @@
 <?php $titre = 'Page Accueil'; ?>
 
-<?php ob_start(); ?>
+<?php
+$content = Null;
+var_dump_pre($videos);
 
-
-
-<?php $contenu = ob_get_clean(); ?>
+for ($i = 0; $i < sizeof($videos); $i++) {
+     $content ='<h1>'.$videos[$i]['nomVideo'].'</h1>';
+}
+?>
 
 <?php require 'template.php'; ?>
