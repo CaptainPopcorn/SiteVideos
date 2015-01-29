@@ -1,22 +1,28 @@
 html, body {
     height: 100%;
+    color: #ddd;
+    
 }
 #page{
     height: 100%;
-    background: #eee;
+    background-color: #303030;
     padding: 0px;
 }
 .underNavTop{
-    height: 100%;
+    min-height: 100%;
 }
 header{
-    height: 10%;
-    background-color: #28a4c9;
+    min-height: 10%;
+    background-color: #202020;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 section{
-    background-color: #5cb85c;
+    overflow: auto;
 }
 nav{
-    background-color: #a94442;
-    overflow: auto;
+    background-color: #202020;
+    height: 90%;
+    border-radius: 10px;
+    margin-top: 5%;
 }

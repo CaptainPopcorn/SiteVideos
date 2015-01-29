@@ -8,7 +8,6 @@ and open the template in the editor.
     $titre = '';
     $leftMenu = '';
     $content = '';
-    $rightMenu = '';
 ?>
 <html>
     <head>
@@ -31,14 +30,14 @@ and open the template in the editor.
                 </h1> 
                 
             </header>
-            <nav class="col-sm-2 underNavTop">
+            <nav class="col-sm-3">
                 <div class="containerCenter col-sm-12 containerBorder ">
                     <ul class="nav nav-pills nav-stacked col-sm-12 ">
                         <?=$leftMenu;?>
                     </ul>
                 </div>
             </nav>
-            <section class="col-sm-10 underNavTop">
+            <section class="col-sm-9 underNavTop">
                 <div class="containerCenter col-sm-12 containerBorder " id="principal">
                     <?=$content;?>
                 </div>
