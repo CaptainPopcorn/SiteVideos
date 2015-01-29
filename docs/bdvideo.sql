@@ -17,12 +17,13 @@ CREATE TABLE t_Utilisateurs(
         idUtilisateur  int (11) Auto_increment  NOT NULL ,
         nomUtilisateur Varchar (50) NOT NULL ,
         motDePasse     Varchar (50) NOT NULL ,
+        email          Varchar (100) NOT NULL ,
         PRIMARY KEY (idUtilisateur ) ,
-        UNIQUE (nomUtilisateur )
+        UNIQUE (nomUtilisateur ,email )
 )ENGINE=InnoDB;
 
 
-CREATE TABLE relation0(
+CREATE TABLE Noter(
         Note          Int NOT NULL ,
         idVideo       Int NOT NULL ,
         idUtilisateur Int NOT NULL ,
@@ -37,7 +38,7 @@ CREATE TABLE Commenter(
         PRIMARY KEY (idVideo ,idUtilisateur )
 )ENGINE=InnoDB;
 
-ALTER TABLE relation0 ADD CONSTRAINT FK_relation0_idVideo FOREIGN KEY (idVideo) REFERENCES t_Videos(idVideo);
-ALTER TABLE relation0 ADD CONSTRAINT FK_relation0_idUtilisateur FOREIGN KEY (idUtilisateur) REFERENCES t_Utilisateurs(idUtilisateur);
+ALTER TABLE Noter ADD CONSTRAINT FK_Noter_idVideo FOREIGN KEY (idVideo) REFERENCES t_Videos(idVideo);
+ALTER TABLE Noter ADD CONSTRAINT FK_Noter_idUtilisateur FOREIGN KEY (idUtilisateur) REFERENCES t_Utilisateurs(idUtilisateur);
 ALTER TABLE Commenter ADD CONSTRAINT FK_Commenter_idVideo FOREIGN KEY (idVideo) REFERENCES t_Videos(idVideo);
 ALTER TABLE Commenter ADD CONSTRAINT FK_Commenter_idUtilisateur FOREIGN KEY (idUtilisateur) REFERENCES t_Utilisateurs(idUtilisateur);
