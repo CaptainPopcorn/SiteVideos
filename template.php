@@ -7,7 +7,7 @@ and open the template in the editor.
 <?php
     $titre = '';
     $leftMenu = '';
-    $content = '';
+    $content = 'blablabla';
 ?>
 <html>
     <head>
