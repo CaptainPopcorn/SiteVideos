@@ -1,0 +1,146 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1370" measuredH="737" mockupW="1122" mockupH="662">
+  <controls>
+    <control controlID="201" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="248" y="75" w="1122" h="662" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Audiocity%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="202" controlTypeID="com.balsamiq.mockups::Canvas" x="254" y="152" w="1109" h="70" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="203" controlTypeID="com.balsamiq.mockups::Canvas" x="254" y="222" w="251" h="483" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="204" controlTypeID="com.balsamiq.mockups::SubTitle" x="297" y="239" w="-1" h="-1" measuredW="122" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Top%20Vid%E9os</text>
+      </controlProperties>
+    </control>
+    <control controlID="205" controlTypeID="com.balsamiq.mockups::Canvas" x="269" y="297" w="80" h="64" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="206" controlTypeID="com.balsamiq.mockups::Label" x="269" y="276" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Titre</text>
+      </controlProperties>
+    </control>
+    <control controlID="207" controlTypeID="com.balsamiq.mockups::Label" x="269" y="367" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dur%E9e</text>
+      </controlProperties>
+    </control>
+    <control controlID="208" controlTypeID="com.balsamiq.mockups::Paragraph" x="357" y="304" w="120" h="50" measuredW="275" measuredH="80" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description%20de%20la%20vid%E9o%20dont%20on%20ne%20voit%20que%20le%20d%E9but%28...%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="209" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="489" y="222" w="-1" h="483" measuredW="16" measuredH="100" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="210" controlTypeID="com.balsamiq.mockups::HRule" x="269" y="401" w="204" h="-1" measuredW="100" measuredH="10" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="211" controlTypeID="com.balsamiq.mockups::Canvas" x="269" y="432" w="80" h="64" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="212" controlTypeID="com.balsamiq.mockups::Label" x="269" y="411" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Titre</text>
+      </controlProperties>
+    </control>
+    <control controlID="213" controlTypeID="com.balsamiq.mockups::Label" x="269" y="502" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dur%E9e</text>
+      </controlProperties>
+    </control>
+    <control controlID="214" controlTypeID="com.balsamiq.mockups::HRule" x="269" y="536" w="204" h="-1" measuredW="100" measuredH="10" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="215" controlTypeID="com.balsamiq.mockups::Canvas" x="269" y="575" w="80" h="64" measuredW="100" measuredH="70" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="216" controlTypeID="com.balsamiq.mockups::Label" x="269" y="554" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Titre</text>
+      </controlProperties>
+    </control>
+    <control controlID="217" controlTypeID="com.balsamiq.mockups::Label" x="269" y="645" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dur%E9e</text>
+      </controlProperties>
+    </control>
+    <control controlID="218" controlTypeID="com.balsamiq.mockups::HRule" x="269" y="679" w="204" h="-1" measuredW="100" measuredH="10" zOrder="17" locked="false" isInGroup="-1"/>
+    <control controlID="219" controlTypeID="com.balsamiq.mockups::Label" x="437" y="367" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>note</text>
+      </controlProperties>
+    </control>
+    <control controlID="220" controlTypeID="com.balsamiq.mockups::Label" x="437" y="502" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>note</text>
+      </controlProperties>
+    </control>
+    <control controlID="221" controlTypeID="com.balsamiq.mockups::Label" x="437" y="645" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>note</text>
+      </controlProperties>
+    </control>
+    <control controlID="222" controlTypeID="com.balsamiq.mockups::Title" x="674" y="166" w="-1" h="-1" measuredW="315" measuredH="43" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nom%20%E0%20venir%20%281-0%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="223" controlTypeID="com.balsamiq.mockups::SubTitle" x="799" y="261" w="-1" h="-1" measuredW="219" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>H%E9berger%20une%20vid%E9o</text>
+      </controlProperties>
+    </control>
+    <control controlID="224" controlTypeID="com.balsamiq.mockups::Paragraph" x="357" y="438" w="120" h="50" measuredW="275" measuredH="80" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description%20de%20la%20vid%E9o%20dont%20on%20ne%20voit%20que%20le%20d%E9but%28...%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="225" controlTypeID="com.balsamiq.mockups::Paragraph" x="357" y="582" w="120" h="50" measuredW="275" measuredH="80" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description%20de%20la%20vid%E9o%20dont%20on%20ne%20voit%20que%20le%20d%E9but%28...%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="226" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1347" y="222" w="-1" h="488" measuredW="16" measuredH="100" zOrder="25" locked="false" isInGroup="-1"/>
+    <control controlID="227" controlTypeID="com.balsamiq.mockups::Button" x="269" y="174" w="-1" h="-1" measuredW="99" measuredH="27" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>D%E9connexion</text>
+      </controlProperties>
+    </control>
+    <control controlID="228" controlTypeID="com.balsamiq.mockups::Link" x="1221" y="190" w="-1" h="-1" measuredW="119" measuredH="19" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>H%E9berger%20une%20vid%E9o</text>
+      </controlProperties>
+    </control>
+    <control controlID="229" controlTypeID="com.balsamiq.mockups::SubTitle" x="437" y="174" w="-1" h="-1" measuredW="135" measuredH="27" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Bonjour%20Paul</text>
+      </controlProperties>
+    </control>
+    <control controlID="230" controlTypeID="com.balsamiq.mockups::TextInput" x="799" y="340" w="219" h="-1" measuredW="79" measuredH="26" zOrder="29" locked="false" isInGroup="-1"/>
+    <control controlID="231" controlTypeID="com.balsamiq.mockups::Label" x="799" y="309" w="-1" h="-1" measuredW="103" measuredH="21" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nom%20de%20la%20vid%E9o%20%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="232" controlTypeID="com.balsamiq.mockups::Label" x="799" y="379" w="-1" h="-1" measuredW="67" measuredH="21" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description</text>
+      </controlProperties>
+    </control>
+    <control controlID="233" controlTypeID="com.balsamiq.mockups::TextArea" x="799" y="412" w="219" h="140" measuredW="200" measuredH="140" zOrder="32" locked="false" isInGroup="-1"/>
+    <control controlID="234" controlTypeID="com.balsamiq.mockups::Button" x="936" y="587" w="-1" h="-1" measuredW="80" measuredH="27" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Parcourir...</text>
+      </controlProperties>
+    </control>
+    <control controlID="235" controlTypeID="com.balsamiq.mockups::TextInput" x="799" y="587" w="137" h="-1" measuredW="79" measuredH="26" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="236" controlTypeID="com.balsamiq.mockups::Label" x="799" y="558" w="-1" h="-1" measuredW="122" measuredH="21" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Choisissez%20un%20fichier</text>
+      </controlProperties>
+    </control>
+    <control controlID="237" controlTypeID="com.balsamiq.mockups::Button" x="949" y="632" w="-1" h="-1" measuredW="69" measuredH="27" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Envoyer</text>
+      </controlProperties>
+    </control>
+    <control controlID="238" controlTypeID="com.balsamiq.mockups::Button" x="799" y="632" w="-1" h="-1" measuredW="68" measuredH="27" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Annuler</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
