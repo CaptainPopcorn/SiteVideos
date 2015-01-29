@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+#page{
+    height: 100%;
+    background: #eee;
+    padding: 0px;
+}
+.underNavTop{
+    height: 100%;
+}
+header{
+    height: 10%;
+    background-color: #28a4c9;
+}
+section{
+    background-color: #5cb85c;
+}
+nav{
+    background-color: #a94442;
+    overflow: auto;
+}
