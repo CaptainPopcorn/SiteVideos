@@ -1,0 +1,179 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1370" measuredH="737" mockupW="1122" mockupH="662">
+  <controls>
+    <control controlID="479" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="248" y="75" w="1122" h="662" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Audiocity%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="480" controlTypeID="com.balsamiq.mockups::Canvas" x="254" y="152" w="1109" h="70" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="481" controlTypeID="com.balsamiq.mockups::Canvas" x="254" y="222" w="251" h="483" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="482" controlTypeID="com.balsamiq.mockups::SubTitle" x="297" y="239" w="-1" h="-1" measuredW="122" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Top%20Vid%E9os</text>
+      </controlProperties>
+    </control>
+    <control controlID="483" controlTypeID="com.balsamiq.mockups::Canvas" x="269" y="297" w="80" h="64" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="484" controlTypeID="com.balsamiq.mockups::Label" x="269" y="276" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Titre</text>
+      </controlProperties>
+    </control>
+    <control controlID="485" controlTypeID="com.balsamiq.mockups::Label" x="269" y="367" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dur%E9e</text>
+      </controlProperties>
+    </control>
+    <control controlID="486" controlTypeID="com.balsamiq.mockups::Paragraph" x="357" y="304" w="120" h="50" measuredW="275" measuredH="80" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description%20de%20la%20vid%E9o%20dont%20on%20ne%20voit%20que%20le%20d%E9but%28...%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="487" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="489" y="222" w="-1" h="483" measuredW="16" measuredH="100" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="488" controlTypeID="com.balsamiq.mockups::HRule" x="269" y="401" w="204" h="-1" measuredW="100" measuredH="10" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="489" controlTypeID="com.balsamiq.mockups::Canvas" x="269" y="432" w="80" h="64" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="490" controlTypeID="com.balsamiq.mockups::Label" x="269" y="411" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Titre</text>
+      </controlProperties>
+    </control>
+    <control controlID="491" controlTypeID="com.balsamiq.mockups::Label" x="269" y="502" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dur%E9e</text>
+      </controlProperties>
+    </control>
+    <control controlID="492" controlTypeID="com.balsamiq.mockups::HRule" x="269" y="536" w="204" h="-1" measuredW="100" measuredH="10" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="493" controlTypeID="com.balsamiq.mockups::Canvas" x="269" y="575" w="80" h="64" measuredW="100" measuredH="70" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="494" controlTypeID="com.balsamiq.mockups::Label" x="269" y="554" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Titre</text>
+      </controlProperties>
+    </control>
+    <control controlID="495" controlTypeID="com.balsamiq.mockups::Label" x="269" y="645" w="-1" h="-1" measuredW="38" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dur%E9e</text>
+      </controlProperties>
+    </control>
+    <control controlID="496" controlTypeID="com.balsamiq.mockups::HRule" x="269" y="679" w="204" h="-1" measuredW="100" measuredH="10" zOrder="17" locked="false" isInGroup="-1"/>
+    <control controlID="497" controlTypeID="com.balsamiq.mockups::Label" x="437" y="367" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>note</text>
+      </controlProperties>
+    </control>
+    <control controlID="498" controlTypeID="com.balsamiq.mockups::Label" x="437" y="502" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>note</text>
+      </controlProperties>
+    </control>
+    <control controlID="499" controlTypeID="com.balsamiq.mockups::Label" x="437" y="645" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>note</text>
+      </controlProperties>
+    </control>
+    <control controlID="500" controlTypeID="com.balsamiq.mockups::Title" x="674" y="166" w="-1" h="-1" measuredW="315" measuredH="43" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nom%20%E0%20venir%20%281-0%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="501" controlTypeID="com.balsamiq.mockups::SubTitle" x="784" y="248" w="-1" h="-1" measuredW="51" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Titre</text>
+      </controlProperties>
+    </control>
+    <control controlID="502" controlTypeID="com.balsamiq.mockups::Label" x="1004" y="554" w="85" h="-1" measuredW="87" measuredH="21" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>note%20%3A%20*%20*%20*%20*%20*%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="503" controlTypeID="com.balsamiq.mockups::Paragraph" x="357" y="438" w="120" h="50" measuredW="275" measuredH="80" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description%20de%20la%20vid%E9o%20dont%20on%20ne%20voit%20que%20le%20d%E9but%28...%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="504" controlTypeID="com.balsamiq.mockups::Paragraph" x="357" y="582" w="120" h="50" measuredW="275" measuredH="80" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description%20de%20la%20vid%E9o%20dont%20on%20ne%20voit%20que%20le%20d%E9but%28...%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="505" controlTypeID="com.balsamiq.mockups::Label" x="520" y="553" w="66" h="-1" measuredW="67" measuredH="21" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description</text>
+      </controlProperties>
+    </control>
+    <control controlID="506" controlTypeID="com.balsamiq.mockups::Paragraph" x="520" y="575" w="578" h="114" measuredW="275" measuredH="80" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Nam%20aliquam%20tincidunt%20arcu%2C%20ac%20pulvinar%20libero%20rutrum%20non.%20Nam%20sagittis%20dui%20sapien%2C%20in%20tincidunt%20sem%20tempor%20a.%20Nulla%20arcu%20mauris%2C%20vehicula%20et%20efficitur%20id%2C%20vestibulum%20id%20dui.%20Cras%20ex%20nulla%2C%20rhoncus%20at%20pulvinar%20at%2C%20tristique%20eget%20nulla.%20Etiam%20viverra%20rhoncus%20pretium.%20Nulla%20ultricies%20arcu%20et%20nisl%20vehicula%20fringilla.%20Nulla%20feugiat%20consequat%20sapien%20eget%20tempus.%20Nam%20aliquet%20nulla%20felis%2C%20quis%20pellentesque%20erat%20rhoncus%20non.%20Fusce%20volutpat%20arcu%20eu%20cursus%20vestibulum.%20Quisque%20tempus%20sem%20vitae%20rhoncus%20tempor.</text>
+      </controlProperties>
+    </control>
+    <control controlID="507" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1347" y="222" w="-1" h="488" measuredW="16" measuredH="100" zOrder="28" locked="false" isInGroup="-1"/>
+    <control controlID="511" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="586" y="280" w="467" h="252" measuredW="300" measuredH="200" zOrder="29" locked="false" isInGroup="-1"/>
+    <control controlID="512" controlTypeID="com.balsamiq.mockups::SubTitle" x="1167" y="234" w="-1" h="-1" measuredW="154" measuredH="27" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>commentaires</text>
+      </controlProperties>
+    </control>
+    <control controlID="513" controlTypeID="com.balsamiq.mockups::VRule" x="1130" y="222" w="-1" h="483" measuredW="10" measuredH="100" zOrder="31" locked="false" isInGroup="-1"/>
+    <control controlID="514" controlTypeID="com.balsamiq.mockups::Label" x="1157" y="270" w="-1" h="-1" measuredW="44" measuredH="21" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pseudo</text>
+      </controlProperties>
+    </control>
+    <control controlID="515" controlTypeID="com.balsamiq.mockups::Label" x="1296" y="270" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Date</text>
+      </controlProperties>
+    </control>
+    <control controlID="516" controlTypeID="com.balsamiq.mockups::Paragraph" x="1157" y="289" w="183" h="80" measuredW="275" measuredH="80" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Nam%20aliquam%20tincidunt%20arcu%2C%20ac%20pulvinar%20libero%20rutrum%20non.%20Nam%20sagittis%20dui%20sapien%2C%20in%20tincidunt%20sem%20tempor%20a.%20Nulla%20arcu%20mauris</text>
+      </controlProperties>
+    </control>
+    <control controlID="517" controlTypeID="com.balsamiq.mockups::HRule" x="1157" y="256" w="179" h="-1" measuredW="100" measuredH="10" zOrder="35" locked="false" isInGroup="-1"/>
+    <control controlID="518" controlTypeID="com.balsamiq.mockups::Label" x="1157" y="389" w="-1" h="-1" measuredW="44" measuredH="21" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pseudo</text>
+      </controlProperties>
+    </control>
+    <control controlID="519" controlTypeID="com.balsamiq.mockups::Label" x="1296" y="389" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Date</text>
+      </controlProperties>
+    </control>
+    <control controlID="520" controlTypeID="com.balsamiq.mockups::Paragraph" x="1157" y="408" w="183" h="80" measuredW="275" measuredH="80" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Nam%20aliquam%20tincidunt%20arcu%2C%20ac%20pulvinar%20libero%20rutrum%20non.%20Nam%20sagittis%20dui%20sapien%2C%20in%20tincidunt%20sem%20tempor%20a.%20Nulla%20arcu%20mauris</text>
+      </controlProperties>
+    </control>
+    <control controlID="521" controlTypeID="com.balsamiq.mockups::HRule" x="1157" y="375" w="179" h="-1" measuredW="100" measuredH="10" zOrder="39" locked="false" isInGroup="-1"/>
+    <control controlID="580" controlTypeID="com.balsamiq.mockups::TextInput" x="269" y="184" w="-1" h="-1" measuredW="79" measuredH="26" zOrder="40" locked="false" isInGroup="-1"/>
+    <control controlID="581" controlTypeID="com.balsamiq.mockups::Label" x="271" y="163" w="-1" h="-1" measuredW="44" measuredH="21" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pseudo</text>
+      </controlProperties>
+    </control>
+    <control controlID="582" controlTypeID="com.balsamiq.mockups::TextInput" x="357" y="184" w="80" h="-1" measuredW="51" measuredH="27" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>******</text>
+      </controlProperties>
+    </control>
+    <control controlID="583" controlTypeID="com.balsamiq.mockups::Label" x="359" y="163" w="-1" h="-1" measuredW="26" measuredH="21" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>mdp</text>
+      </controlProperties>
+    </control>
+    <control controlID="584" controlTypeID="com.balsamiq.mockups::Button" x="444" y="184" w="-1" h="-1" measuredW="84" measuredH="27" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Connexion</text>
+      </controlProperties>
+    </control>
+    <control controlID="585" controlTypeID="com.balsamiq.mockups::Link" x="1223" y="188" w="-1" h="-1" measuredW="117" measuredH="19" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pas%20encore%20inscrit%20%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="586" controlTypeID="com.balsamiq.mockups::Link" x="520" y="675" w="-1" h="-1" measuredW="99" measuredH="19" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Liste%20des%20vid%E9os</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
