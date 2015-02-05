@@ -1,8 +1,8 @@
 <?php
 
-require './modele/ModeleDB.php';
-require './modele/ModeleUtilisateurs.php';
-require './modele/ModeleVideos.php';
+require_once './modele/ModeleDB.php';
+require_once './modele/ModeleUtilisateurs.php';
+require_once './modele/ModeleVideos.php';
 
 
 // Affiche la liste de tous les billets du blog

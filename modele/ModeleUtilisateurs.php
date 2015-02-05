@@ -1,7 +1,7 @@
 <?php
 
-require('./ModeleDB.php');
-require('./ModeleVideos.php');
+require_once('./modele/ModeleDB.php');
+require_once('./modele/ModeleVideos.php');
 
 function Connexion_Site($Pseudo, $mdp) {
     $pdo = ConnexionBD();
@@ -30,7 +30,6 @@ function Inscription_Site($Pseudo, $mdp, $email) {
     $statement_user->execute(array("nomUser" => $Pseudo,
         "email" => $email));
     $statement_user = $statement_user->fetchAll();
-    var_dump_pre($statement_user);
 
     //Check si la variable est vide -> pas de redondance d'infos entre utilisateurs
     if (empty($statement_user)) {
@@ -46,10 +45,4 @@ function Inscription_Site($Pseudo, $mdp, $email) {
             erreur($e->getMessage());
         }
     }
-}
-
-function var_dump_pre($var) {
-    echo '<pre>';
-    echo var_dump($var);
-    echo '</pre>';
 }

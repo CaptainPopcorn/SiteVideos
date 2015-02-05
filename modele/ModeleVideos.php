@@ -1,6 +1,6 @@
 <?php
-require('./ModeleDB.php');
-require('./ModeleUtilisateurs.php');
+require_once('./modele/ModeleDB.php');
+require_once('./modele/ModeleUtilisateurs.php');
 
 /**
  * Récupéere les infos de toutes les videos présente dans la bdd
