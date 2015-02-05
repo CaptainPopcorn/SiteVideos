@@ -1,6 +1,9 @@
 <?php
 
-require './modele/Modele.php';
+require './modele/ModeleDB.php';
+require './modele/ModeleUtilisateurs.php';
+require './modele/ModeleVideos.php';
+
 
 // Affiche la liste de tous les billets du blog
 function accueil() {

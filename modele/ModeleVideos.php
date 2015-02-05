@@ -1,12 +1,6 @@
 <?php
-
-// Effectue la connexion à la BDD
-// Instancie et renvoie l'objet PDO associé
-function ConnexionBD() {
-    $pdo = new PDO('mysql:host=localhost;dbname=bdvideos', 'root', '');
-    $pdo->exec('set character set utf8');
-    return $pdo;
-}
+require('./ModeleDB.php');
+require('./ModeleUtilisateurs.php');
 
 /**
  * Récupéere les infos de toutes les videos présente dans la bdd
@@ -56,16 +50,3 @@ function getCommentaire($idVideo) {
     return $statement;
 }
 
-function Connexion_Site($Pseudo, $mdp) {
-    $pdo = ConnexionBD();
-}
-
-function Inscription_Site($Pseudo, $mdp, $email) {
-    $pdo = ConnexionBD();
-}
-
-function var_dump_pre($var) {
-    echo '<pre>';
-    echo var_dump($var);
-    echo '</pre>';
-}
