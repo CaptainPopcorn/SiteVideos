@@ -5,25 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-    $TopContent = '<form class = "form-inline col-sm-4" method = "post" action = "index.php?access=login">
-                <div class = "form-group">
-                    <label for = "username"> Username</label>
-                    <li><input type = "text" value = "username" name = "username" class = "form-control" id = "username"></li>
-                </div>
-                <div class = "form-group">
-                    <label for = "password"> Password</label>
-                    <li><input type = "password" value = "password" name = "password" id = "password" class = "form-control"></li>
-                </div>
-                <div class = "form-group">
-                        <input type = "submit" value = "login" name = "login" class = "btn-link">
-                    </div>
-                <div class = "form-group">
-                        <a class = "btn-link" href = "./index.php?access=register"> register</a>
-                    </div>
-            </form>';
-    $titre = 'Accueil';
-    $leftMenu = '';
-    $content = 'blablabla';
+    
 ?>
 <html>
     <head>
@@ -56,8 +38,8 @@ and open the template in the editor.
                 </div>
             </nav>
             <section class="col-sm-9 underNavTop">
-                <div class="containerCenter col-sm-12 containerBorder " id="principal">
-                    <?=$content;?>
+                <div class="containerCenter col-lg- col-lg-offset-4 containerBorder" id="principal">
+                    <?=$contenu;?>
                 </div>
             </section>
         </div>           

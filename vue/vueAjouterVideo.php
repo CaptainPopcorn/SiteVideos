@@ -1,5 +1,5 @@
 <?php $titre = 'Page Ajouter video'; ?>
-
+<?php $TopContent = AfficheFormInscription(); ?>
 <?php ob_start(); ?>
 
 

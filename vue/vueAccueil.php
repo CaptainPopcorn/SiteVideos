@@ -1,5 +1,5 @@
 <?php $titre = 'Page Accueil'; ?>
-
+<?php $TopContent = AfficheFormInscription(); ?>
 <?php ob_start(); ?>
 
 <?php for ($i = 0; $i < sizeof($videos); $i++) { ?>

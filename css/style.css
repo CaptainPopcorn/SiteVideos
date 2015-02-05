@@ -35,3 +35,10 @@ nav{
     float: left;
     margin: 1%;
 }
+li{ 
+    list-style-type: none;
+}
+
+.form-section{
+    margin: 0 auto;
+}

@@ -1,5 +1,6 @@
 <?php
 
+require_once './modele/ModeleAffichage.php';
 require_once('./Controleur/Controleur.php');
 
 try {
@@ -17,7 +18,7 @@ try {
         
         // Check action  -> afficher la page d'inscription
         if ($_GET['action'] == 'inscription') {
-            
+            inscription();
         }
         
         // Check action  -> afficher affiche la page d'ajout de video
