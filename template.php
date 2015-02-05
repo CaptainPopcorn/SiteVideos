@@ -5,7 +5,23 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-    $titre = '';
+    $TopContent = '<form class = "form-inline col-sm-4" method = "post" action = "index.php?access=login">
+                <div class = "form-group">
+                    <label for = "username"> Username</label>
+                    <li><input type = "text" value = "username" name = "username" class = "form-control" id = "username"></li>
+                </div>
+                <div class = "form-group">
+                    <label for = "password"> Password</label>
+                    <li><input type = "password" value = "password" name = "password" id = "password" class = "form-control"></li>
+                </div>
+                <div class = "form-group">
+                        <input type = "submit" value = "login" name = "login" class = "btn-link">
+                    </div>
+                <div class = "form-group">
+                        <a class = "btn-link" href = "./index.php?access=register"> register</a>
+                    </div>
+            </form>';
+    $titre = 'Accueil';
     $leftMenu = '';
     $content = 'blablabla';
 ?>
@@ -22,12 +38,14 @@ and open the template in the editor.
     <body>
         <div id="page" class="col-sm-12">
             <header class="navbar-fixed-top col-sm-12">
-                <h1>
+                <h1 id="TitrePrincipal" class="col-sm-7">
                     Site Vidéos
                     <small>
-                        <?= $titre ?>
+                        <?= $titre; ?>
                     </small>
                 </h1> 
+                <?=$TopContent;?>
+                
                 
             </header>
             <nav class="col-sm-3">

@@ -17,14 +17,21 @@ header{
     min-height: 10%;
     background-color: #202020;
     border: 1px solid #ddd;
-    text-align: center;
+    //text-align: center;
 }
 section{
     overflow: auto;
 }
 nav{
     background-color: #202020;
-    height: 90%;
+    height: 86%;
     border-radius: 10px;
-    margin-top: 5%;
+    margin-top: 7%;
+}
+#TitrePrincipal{
+    float: right;
+}
+.form-inline{
+    float: left;
+    margin: 1%;
 }
