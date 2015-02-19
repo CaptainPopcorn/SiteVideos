@@ -5,6 +5,7 @@ require_once('./modele/ModeleVideos.php');
 
 function Connexion_Site($Pseudo, $mdp) {
     $pdo = ConnexionBD();
+    
 }
 /**
  * Fonction d'inscription
@@ -18,8 +19,8 @@ function Inscription_Site($Pseudo, $mdp, $email) {
     $pdo = ConnexionBD();
     
     //filtre
-    $Pseudo = trim($Pseudo, " ");
-    $email = trim($email, " ");
+    $Pseudo = trim($Pseudo, " \t\n\r\0\x0B");
+    $email = trim($email, " \t\n\r\0\x0B");
     
 
     //Test si les infos d'inscriptions correspondent déja à des infos d'un utilisateur déja dans la base
