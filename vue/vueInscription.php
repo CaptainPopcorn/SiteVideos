@@ -5,7 +5,7 @@
     if (!empty($_SESSION['erreur'])){
         $erreur = $_SESSION['erreur'];
         if ($erreur == 'saisiePseudoEmail'){
-            $erreur = 'le pseudo ou l\'email contiennent des caractères non autorisés';
+            $erreur = ' /!\ le pseudo ou l\'email contiennent des caractères non autorisés /!\ ';
         }
     }
  ?>
@@ -17,7 +17,7 @@
                 <h2 class="h2"> Inscription </h2>
                 <?php
                     if (!empty($erreur)){
-                        echo '<h3 class="h3">'. $erreur . '</h3>';
+                        echo '<p>'. $erreur . '</p>';
                     } 
                 ?>
                 <form class="form-horizontal" action="index.php?action=inscrit" method="post" enctype="multipart/form-data">
