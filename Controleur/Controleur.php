@@ -37,4 +37,22 @@ function inscrit(){
         require './vue/vueInscription.php';
     }
 }
+
+function connexion() {
+    if (isset($_POST['login'])) {
+        $pseudo = $_POST['username'];
+        $mdp = $_POST['password'];
+        Connexion_Site($pseudo, md5($mdp));
+    }
+    require './vue/vueAccueil.php';
+}
+
+function deconnexion() {
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();//Creer une session
+    }  
+    session_destroy(); //Detruit la session
+    session_start();
+    require './vue/vueAccueil.php';
+}
 ?>

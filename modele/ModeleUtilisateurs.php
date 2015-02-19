@@ -3,10 +3,30 @@
 require_once('./modele/ModeleDB.php');
 require_once('./modele/ModeleVideos.php');
 
-function Connexion_Site($Pseudo, $mdp) {
+function Connexion_Site($Pseudo, $mdp_md5) {
     $pdo = ConnexionBD();
     
+    try {
+        //request de tous les password de la base, return un tableau
+        $query = "select idUtilisateur, motDePasse, nomUtilisateur from t_utilisateurs "
+                . "WHERE nomUtilisateur = :nomUtilisateur AND motDePasse = :motDePasse";
+        $statement = $pdo->prepare($query);
+        $statement->execute(array(":nomUtilisateur" => $Pseudo,
+            ":motDePasse" => $mdp_md5));
+        $statement = $statement->fetch();
+        
+        
+        if ($statement) {
+            $_SESSION['pseudo'] = $statement['nomUtilisateur'];
+            $_SESSION['iduser'] = $statement['idUtilisateur'];
+        } else {
+            throw new Exception("Pseudo ou mot de passe incorrect.");
+        }
+    } catch (Exception $e) {
+        erreur($e->getMessage());
+    }
 }
+
 
 /**
  * Fonction d'inscription

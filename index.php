@@ -30,9 +30,14 @@ try {
             
         }
         
-        // Check action  -> deconnecte l'utilisateur
+       // Check action  -> deconnecte l'utilisateur
         if ($_GET['action'] == 'deconnexion') {
-            
+            deconnexion();
+        }
+        
+        // Check action  -> connecte l'utilisateur
+        if ($_GET['action'] == 'login') {
+            connexion();
         }
         
     } else {
