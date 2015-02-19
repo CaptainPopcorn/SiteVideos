@@ -9,7 +9,7 @@
 <div class="form">
     <div class="form-section ">
                 <h2 class="h2"> Inscription </h2>
-                <form class="form-horizontal" action="index.php?access=registered" method="post" enctype="multipart/form-data">
+                <form class="form-horizontal" action="index.php?action=inscrit" method="post" enctype="multipart/form-data">
                       <div class="form-group">
                           <label for="pseudo"> Pseudo</label>                                 
                           <input type="text" value="" name="username" class="form-control" id="username" placeholder="Pseudo">

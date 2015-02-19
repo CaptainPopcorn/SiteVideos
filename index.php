@@ -20,6 +20,10 @@ try {
         if ($_GET['action'] == 'inscription') {
             inscription();
         }
+        // Check action  -> l'utilisateur est inscrit
+        if ($_GET['action'] == 'inscrit') {
+            inscrit();
+        }
         
         // Check action  -> afficher affiche la page d'ajout de video
         if ($_GET['action'] == 'uploader') {

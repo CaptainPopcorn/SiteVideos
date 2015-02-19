@@ -25,6 +25,11 @@ function erreur($msgErreur) {
 
 // Appelle la vue inscription
 function inscription(){
+    
     require './vue/vueInscription.php';
+}
+function inscrit(){
+    Inscrire();
+    require './vue/vueAccueil.php';
 }
 ?>
