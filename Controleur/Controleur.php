@@ -29,7 +29,12 @@ function inscription(){
     require './vue/vueInscription.php';
 }
 function inscrit(){
-    Inscrire();
-    require './vue/vueAccueil.php';
+    if (Inscrire()){
+        require './vue/vueAccueil.php';
+    }
+    else{
+        $_SESSION['erreur'] = 'saisiePseudoEmail';
+        require './vue/vueInscription.php';
+    }
 }
 ?>

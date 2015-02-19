@@ -2,6 +2,12 @@
     $titre = 'Page Inscription';
     $TopContent = AfficheFormInscription();
     $leftMenu = '';
+    if (!empty($_SESSION['erreur'])){
+        $erreur = $_SESSION['erreur'];
+        if ($erreur == 'saisiePseudoEmail'){
+            $erreur = 'le pseudo ou l\'email contiennent des caractères non autorisés';
+        }
+    }
  ?>
 
 <?php ob_start(); ?>
@@ -9,6 +15,11 @@
 <div class="form">
     <div class="form-section ">
                 <h2 class="h2"> Inscription </h2>
+                <?php
+                    if (!empty($erreur)){
+                        echo '<h3 class="h3">'. $erreur . '</h3>';
+                    } 
+                ?>
                 <form class="form-horizontal" action="index.php?action=inscrit" method="post" enctype="multipart/form-data">
                       <div class="form-group">
                           <label for="pseudo"> Pseudo</label>                                 

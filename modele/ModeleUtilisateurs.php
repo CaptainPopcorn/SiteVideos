@@ -20,8 +20,14 @@ function Inscription_Site($Pseudo, $mdp, $email) {
     $pdo = ConnexionBD();
 
     //filtre
-    $Pseudo = trim($Pseudo, " \t\n\r\0\x0B");
-    $email = trim($email, " \t\n\r\0\x0B");
+    $Pseudo_Mem = trim($Pseudo, " \t\n\r\0\x0B");
+    $email_Mem = trim($email, " \t\n\r\0\x0B");
+    
+    if (($Pseudo_Mem != $Pseudo) || ($email_Mem != $email)){
+        //$erreur = 'le pseudo ou le mot de passe contient des caractères non autorisés';
+        return FALSE;
+        exit;
+    }
     //Test si les infos d'inscriptions correspondent déja à des infos d'un utilisateur déja dans la base
     $query_user = 'SELECT nomUtilisateur, email FROM t_utilisateurs '
             . 'WHERE nomUtilisateur = :nomUser OR email = :email';
@@ -50,7 +56,12 @@ function Inscription_Site($Pseudo, $mdp, $email) {
 function Inscrire() {
     if (isset($_REQUEST['submit'])) {
         if ((!empty($_REQUEST['username'])) && (!empty($_REQUEST['email'])) && (!empty($_REQUEST['mdp']))) {
-            Inscription_Site($_REQUEST['username'], md5($_REQUEST['mdp']), $_REQUEST['email']);
+            if (!Inscription_Site($_REQUEST['username'], md5($_REQUEST['mdp']), $_REQUEST['email'])){
+                return FALSE;
+            }
+            else{
+                return TRUE;
+            }
         }
     }
 }
