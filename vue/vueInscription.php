@@ -12,19 +12,19 @@
                 <form class="form-horizontal" action="index.php?access=registered" method="post" enctype="multipart/form-data">
                       <div class="form-group">
                           <label for="pseudo"> Pseudo</label>                                 
-                          <input type="text" value="username" name="username" class="form-control" id="username">
+                          <input type="text" value="" name="username" class="form-control" id="username" placeholder="Pseudo">
                       </div>
                     <div class="form-group">
                           <label for="email"> email </label>
-                          <input type="text" value="email" name="email" id="ArtistName" class="form-control">
+                          <input type="text" value="" name="email" id="ArtistName" class="form-control" placeholder="email">
                       </div>
                       <div class="form-group">
                           <label for="mdp"> mdp</label>
-                          <input type="password" name="mdp" id="mdp" class="form-control">
+                          <input type="password" name="mdp" id="mdp" class="form-control" placeholder="Mot de passe">
                       </div>
                       <div class="form-group">
                           <label for="mdp_confirm"> confirmation mdp</label>
-                          <input type="password"  name="mdp_confirm" id="mdp_confirm" class="form-control">
+                          <input type="password"  name="mdp_confirm" id="mdp_confirm" class="form-control" placeholder="Confirmer le mot de passe">
                       </div>
 
                       <div class="form-group">
