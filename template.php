@@ -5,7 +5,18 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-    
+    if (empty($titre)){
+        $titre = '';
+    }
+    if (empty($TopContent)){
+        $TopContent = '';
+    }
+    if (empty($leftMenu)){
+        $leftMenu = '';
+    }
+    if (empty($contenu)){
+        $contenu = '';
+    }
 ?>
 <html>
     <head>
