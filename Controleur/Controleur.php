@@ -62,7 +62,6 @@ function upload() {
     if (isset($_POST['upload'])) {
         $NomVideo = $_POST['nomVideo'];
         $Description = $_POST['description'];
-        $Video = $_POST['video'];
         //UploadFichier($Video);
         //UploadVideo($NomVideo, $Description);
     }
