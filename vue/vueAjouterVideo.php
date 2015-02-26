@@ -1,53 +1,37 @@
-<?php $titre = 'Page Ajouter video'; ?>
+<?php $titre = 'Ajouter une video'; ?>
 <?php $TopContent = AfficheFormInscription(); ?>
 <?php ob_start(); ?>
 
-<form class="form-horizontal">
-    <fieldset>
-
-        <!-- Form Name -->
-        <legend>Form Name</legend>
-
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="nomVideo">Nom de la vidéo</label>  
-            <div class="col-md-4">
-                <input id="nomVideo" name="nomVideo" type="text" placeholder="Nom de la vidéo" class="form-control input-md">
-
+<div class="form">
+    <div class="form-section ">
+        <form class="form-horizontal" action="index.php?action=upload" method="post" enctype="multipart/form-data">
+            <h2 class="h2"> Ajouter une video </h2>
+            <div class="form-group">
+                <label for="nomVideo">Nom de la vidéo</label>  
+                <input id="nomVideo" name="nomVideo" type="text" placeholder="Nom de la vidéo" class="form-control input-md" required="">
             </div>
-        </div>
-        
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="video">Choisir la vidéo</label>
-            <div class="col-md-4">
-                <input id="video" name="video" class="input-file" type="file">
-            </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="description">Description</label>
-            <div class="col-md-4">                     
-                <textarea class="form-control" id="description" name="description">Description de la vidéo</textarea>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" name="description" placeholder="Description de la vidéo" required=""></textarea>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="tags">Ajouter des tags</label>
-            <div class="col-md-4">                     
-                <textarea class="form-control" id="tags" name="tags">Ajouter des tags</textarea>
+            <div class="form-group">
+                <label for="tags">Ajouter des tags</label>
+                <textarea class="form-control" id="tags" name="tags" placeholder="Ajouter des tags" required=""></textarea>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="upload">Uploader ou Annuler</label>
-            <div class="col-md-8">
-                <button id="upload" name="upload" class="btn btn-primary">Upload</button>
+            <div class="form-group">
+                <input id="video" name="video" class="input-file" type="file" accept="video/*" required="">
+            </div>
+
+            <div class="form-group">
+                <button id="upload" name="upload" class="btn btn-success">Upload</button>
                 <button id="annuler" name="annuler" class="btn btn-warning">Annuler</button>
             </div>
-        </div>
-
-    </fieldset>
-</form>
-
+        </form>
+    </div>
+</div>
 
 <?php $contenu = ob_get_clean(); ?>
 

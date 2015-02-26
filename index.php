@@ -27,6 +27,10 @@ try {
         
         // Check action  -> afficher affiche la page d'ajout de video
         if ($_GET['action'] == 'uploader') {
+            Affiche_AjouterVideo();
+        }
+        // Check action  -> upload la video
+        if ($_GET['action'] == 'upload') {
             
         }
         
