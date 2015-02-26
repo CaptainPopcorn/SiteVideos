@@ -1,5 +1,6 @@
 <?php $titre = 'Ajouter une video'; ?>
 <?php $TopContent = AfficheFormInscription(); ?>
+<?php $tableauTags = TagsAssociatif(); ?>
 <?php ob_start(); ?>
 
 <div class="form">
@@ -17,8 +18,8 @@
             </div>
 
             <div class="form-group">
-                <label for="tags">Ajouter des tags</label>
-                <textarea class="form-control" id="tags" name="tags" placeholder="Ajouter des tags" required=""></textarea>
+                <label for="Tags">Ajouter des Tags</label>
+                <?php echo Select('Tags', $tableauTags, NULL, $MultiSelect = TRUE); ?>
             </div>
 
             <div class="form-group">

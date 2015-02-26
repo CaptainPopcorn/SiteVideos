@@ -24,7 +24,7 @@ CREATE TABLE t_Utilisateurs(
 )ENGINE=InnoDB;
 
 
-CREATE TABLE _T_Tags(
+CREATE TABLE T_Tags(
         idTag int (11) Auto_increment  NOT NULL ,
         Name  Varchar (25) NOT NULL ,
         PRIMARY KEY (idTag ) ,
@@ -48,7 +48,7 @@ CREATE TABLE Commenter(
 )ENGINE=InnoDB;
 
 
-CREATE TABLE _Definir(
+CREATE TABLE Definir(
         idTag         Int NOT NULL ,
         idUtilisateur Int NOT NULL ,
         PRIMARY KEY (idTag ,idUtilisateur )
@@ -59,5 +59,5 @@ ALTER TABLE Noter ADD CONSTRAINT FK_Noter_idVideo FOREIGN KEY (idVideo) REFERENC
 ALTER TABLE Noter ADD CONSTRAINT FK_Noter_idUtilisateur FOREIGN KEY (idUtilisateur) REFERENCES t_Utilisateurs(idUtilisateur);
 ALTER TABLE Commenter ADD CONSTRAINT FK_Commenter_idVideo FOREIGN KEY (idVideo) REFERENCES t_Videos(idVideo);
 ALTER TABLE Commenter ADD CONSTRAINT FK_Commenter_idUtilisateur FOREIGN KEY (idUtilisateur) REFERENCES t_Utilisateurs(idUtilisateur);
-ALTER TABLE _Definir ADD CONSTRAINT FK__Definir_idTag FOREIGN KEY (idTag) REFERENCES _T_Tags(idTag);
-ALTER TABLE _Definir ADD CONSTRAINT FK__Definir_idUtilisateur FOREIGN KEY (idUtilisateur) REFERENCES t_Utilisateurs(idUtilisateur);
+ALTER TABLE Definir ADD CONSTRAINT FK_Definir_idTag FOREIGN KEY (idTag) REFERENCES T_Tags(idTag);
+ALTER TABLE Definir ADD CONSTRAINT FK_Definir_idUtilisateur FOREIGN KEY (idUtilisateur) REFERENCES t_Utilisateurs(idUtilisateur);

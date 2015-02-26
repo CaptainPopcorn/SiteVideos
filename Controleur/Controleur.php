@@ -31,23 +31,21 @@ function inscription() {
 function Affiche_AjouterVideo() {
     if (isset($_SESSION['iduser'])) {
         require './vue/vueAjouterVideo.php';
-    }else {
+    } else {
         erreur('Vous n\'êtes pas connecté');
     }
 }
 
 function inscrit() {
     $resultat = Inscrire();
-    if ($resultat == 1){      
+    if ($resultat == 1) {
         $_SESSION['erreur'] = 'saisiePseudoEmail';
         require './vue/vueInscription.php';
-    }
-    else if ($resultat == 2){
+    } else if ($resultat == 2) {
         $_SESSION['erreur'] = 'existeDeja';
         require './vue/vueInscription.php';
-    }
-    else{
-        require './vue/vueAccueil.php'; 
+    } else {
+        require './vue/vueAccueil.php';
     }
 }
 
@@ -58,6 +56,19 @@ function connexion() {
         Connexion_Site($pseudo, md5($mdp));
     }
     require './vue/vueAccueil.php';
+}
+
+function upload() {
+    if (isset($_POST['upload'])) {
+        $NomVideo = $_POST['nomVideo'];
+        $Description = $_POST['description'];
+        $Video = $_POST['video'];
+        //UploadFichier($Video);
+        //UploadVideo($NomVideo, $Description);
+    }
+    require './vue/vueAjouterVideo.php';
+    var_dump_pre($_POST);
+    var_dump_pre($_FILES);
 }
 
 function deconnexion() {

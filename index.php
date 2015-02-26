@@ -31,7 +31,7 @@ try {
         }
         // Check action  -> upload la video
         if ($_GET['action'] == 'upload') {
-            
+            upload();
         }
         
        // Check action  -> deconnecte l'utilisateur
