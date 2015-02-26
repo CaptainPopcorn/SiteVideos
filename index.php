@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once './modele/ModeleAffichage.php';
 require_once('./Controleur/Controleur.php');
 

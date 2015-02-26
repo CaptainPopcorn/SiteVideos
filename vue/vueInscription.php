@@ -2,12 +2,17 @@
     $titre = 'Page Inscription';
     $TopContent = AfficheFormInscription();
     $leftMenu = '';
+    $erreur = '';
     if (!empty($_SESSION['erreur'])){
         $erreur = $_SESSION['erreur'];
         if ($erreur == 'saisiePseudoEmail'){
             $erreur = ' /!\ le pseudo ou l\'email contiennent des caractères non autorisés /!\ ';
         }
+        else if($erreur == 'existeDeja'){
+            $erreur =' /!\ le pseudo ou l\'email existent déjà dans la base de données /!\  ';
+        }
     }
+    $_SESSION['erreur'] = NULL;
  ?>
 
 <?php ob_start(); ?>
