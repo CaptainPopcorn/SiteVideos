@@ -24,9 +24,9 @@ function Select($name, $liste, $courant , $multiselect) {
     //CREATE A SELECT WITH OPTIONS
     
     if ($multiselect){
-        $text = '<select id="' . $name . '" name="' . $name . '[]" multiple class="form-control" required="">';
+        $text = '<select id="' . $name . '" name="' . $name . '[]" multiple class="form-control">';
     }else {
-        $text = '<select id="' . $name . '" name="' . $name . '" class="form-control" required="">';
+        $text = '<select id="' . $name . '" name="' . $name . '" class="form-control">';
     }
     
 

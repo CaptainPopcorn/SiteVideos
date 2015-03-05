@@ -119,5 +119,22 @@ function GetLastVideos($n){
     SELECT * FROM t_videos ORDER BY idUtilisateur DESC LIMIT '.$n.'
     ) sub
     ORDER BY idUtilisateur DESC';
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $statement = $statement->fetchAll();
+    return $statement;
+}
+
+function GetTopVideos($n){
+    $pdo = ConnexionBD();
+    $query = 'SELECT *, AVG(Note) as avg_note
+            FROM noter
+            NATURAL JOIN t_videos
+            GROUP BY nomVideo
+            ORDER BY avg_note DESC LIMIT '.$n;
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $statement = $statement->fetchAll();
+    return $statement;
 }
 ?>
