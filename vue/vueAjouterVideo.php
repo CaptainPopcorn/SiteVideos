@@ -23,7 +23,13 @@
             </div>
 
             <div class="form-group">
+                <label for="video">Ajouter une video</label>
                 <input id="video" name="video" class="input-file" type="file" accept="video/*" required="">
+            </div>
+            
+            <div class="form-group">
+                <label for="miniature">Ajouter une miniature de video</label>
+                <input id="miniature" name="miniature" class="input-file" type="file" accept="image/*" required="">
             </div>
 
             <div class="form-group">

@@ -16,6 +16,8 @@ try {
                 throw new Exception("Cette video n'existe pas.");
             }
         }
+        
+        
 
         // Check action  -> afficher la page d'inscription
         if ($_GET['action'] == 'inscription') {

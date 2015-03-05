@@ -15,7 +15,6 @@ function getVideos() {
     $statement->execute();
     $statement = $statement->fetchAll();
     return $statement;
-
 }
 
 /**
@@ -65,38 +64,49 @@ function getTags() {
 /**
  * Ajoute les informations de la vidéo dans la base
  */
-function UploadInfoVideo($nomVideo, $urlVideo, $Description, $idUtilisateur) {
+function UploadInfoVideo($nomVideo, $urlVideo, $urlMiniature, $Description, $idUtilisateur) {
     $pdo = ConnexionBD();
-    
+
     $date = date('Y-m-d');
-    
-    $query = 'INSERT INTO t_videos (nomVideo, urlVideo, Description, idUtilisateur, DateSortie) '
-            . 'VALUES (:nomVideo, :urlVideo, :Description, :idUtilisateur, :DateSortie)';
+
+    $query = 'INSERT INTO t_videos (nomVideo, urlVideo, urlMiniature, Description, idUtilisateur, DateSortie) '
+            . 'VALUES (:nomVideo, :urlVideo, :urlMiniature, :Description, :idUtilisateur, :DateSortie)';
     $statement = $pdo->prepare($query);
     $statement->execute(array(':nomVideo' => $nomVideo,
-                                ':urlVideo' => $urlVideo,
-                                ':Description' => $Description,
-                                'idUtilisateur' => $idUtilisateur,
-                                'DateSortie' => $date));
+        ':urlVideo' => $urlVideo,
+        ':urlMiniature' => $urlMiniature,
+        ':Description' => $Description,
+        'idUtilisateur' => $idUtilisateur,
+        'DateSortie' => $date));
     $statement = $statement->fetchAll();
     return $statement;
 
-    
-        // $query = 'INSERT INTO t_utilisateurs (nomUtilisateur, motDePasse, email)
-       //  VALUES(:nomUtilisateur,:motDePasse,:email)';
+
+    // $query = 'INSERT INTO t_utilisateurs (nomUtilisateur, motDePasse, email)
+    //  VALUES(:nomUtilisateur,:motDePasse,:email)';
 }
 
 /**
  * Upload le fichier sur le dossier du serveur
  */
-function UploadFichierVideo($Video) {
-    $uploaddir = './videos/';
-    $path_info = pathinfo($Video['video']['name']);
-    $extension = $path_info['extension'];
-    $temp_file_name = uniqid(true) . '.' . $extension;
-    $uploadfile = $uploaddir . $temp_file_name;
-    move_uploaded_file($_FILES['video']['tmp_name'], $uploadfile);
-    
+function UploadFichier($Fichier, $type) {
+    if ($type == 'video') {
+        $uploaddir = './videos/';
+        $path_info = pathinfo($Fichier['name']);
+        $extension = $path_info['extension'];
+        $temp_file_name = uniqid(true) . '.' . $extension;
+        $uploadfile = $uploaddir . $temp_file_name;
+        move_uploaded_file($Fichier['tmp_name'], $uploadfile);
+    }
+
+    if ($type == 'miniature') {
+        $uploaddir = './miniatures/';
+        $path_info = pathinfo($Fichier['name']);
+        $extension = $path_info['extension'];
+        $temp_file_name = uniqid(true) . '.' . $extension;
+        $uploadfile = $uploaddir . $temp_file_name;
+        move_uploaded_file($Fichier['tmp_name'], $uploadfile);
+    }
     return $uploadfile;
 }
 

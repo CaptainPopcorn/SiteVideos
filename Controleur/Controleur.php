@@ -7,6 +7,7 @@ require_once './modele/ModeleVideos.php';
 // Affiche la liste de tous les billets du blog
 function accueil() {
     $videos = getVideos();
+    var_dump_pre($videos);
     require './vue/vueAccueil.php';
 }
 
@@ -63,9 +64,14 @@ function upload() {
         if (isset($_POST['upload'])) {
             $NomVideo = $_POST['nomVideo'];
             $Description = $_POST['description'];
-            $urlVideo = UploadFichierVideo($_FILES);
-            var_dump_pre($urlVideo);
-            UploadInfoVideo($NomVideo, $urlVideo, $Description, $_SESSION['iduser']);
+            
+            $video = $_FILES['video'];
+            $urlVideo = UploadFichier($video, 'video'); // Upload video
+            
+            $miniature = $_FILES['miniature'];
+            $urlMiniature = UploadFichier($miniature, 'miniature'); // upload miniature video
+            
+            UploadInfoVideo($NomVideo, $urlVideo, $urlMiniature, $Description, $_SESSION['iduser']);
         }else {
             require './vue/vueAccueil.php';
         }
@@ -73,8 +79,6 @@ function upload() {
         erreur('Vous n\'êtes pas connecté');
     }
     require './vue/vueAjouterVideo.php';
-    var_dump_pre($_POST);
-    var_dump_pre($_FILES);
 }
 
 function deconnexion() {
