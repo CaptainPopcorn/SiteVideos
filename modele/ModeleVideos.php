@@ -9,12 +9,13 @@ require_once('./modele/ModeleUtilisateurs.php');
  */
 function getVideos() {
     $pdo = ConnexionBD();
-    
+
     $query = "SELECT * FROM t_videos";
     $statement = $pdo->prepare($query);
     $statement->execute();
     $statement = $statement->fetchAll();
     return $statement;
+
 }
 
 /**
@@ -53,24 +54,50 @@ function getCommentaire($idVideo) {
  */
 function getTags() {
     $pdo = ConnexionBD();
-    
+
     $query = "SELECT * FROM t_tags";
     $statement = $pdo->prepare($query);
     $statement->execute();
     $statement = $statement->fetchAll();
     return $statement;
 }
+
 /**
  * Ajoute les informations de la vidéo dans la base
  */
-function UploadVideo() {
+function UploadInfoVideo($nomVideo, $urlVideo, $Description, $idUtilisateur) {
+    $pdo = ConnexionBD();
     
+    $date = date('Y-m-d');
+    
+    $query = 'INSERT INTO t_videos (nomVideo, urlVideo, Description, idUtilisateur, DateSortie) '
+            . 'VALUES (:nomVideo, :urlVideo, :Description, :idUtilisateur, :DateSortie)';
+    $statement = $pdo->prepare($query);
+    $statement->execute(array(':nomVideo' => $nomVideo,
+                                ':urlVideo' => $urlVideo,
+                                ':Description' => $Description,
+                                'idUtilisateur' => $idUtilisateur,
+                                'DateSortie' => $date));
+    $statement = $statement->fetchAll();
+    return $statement;
+
+    
+        // $query = 'INSERT INTO t_utilisateurs (nomUtilisateur, motDePasse, email)
+       //  VALUES(:nomUtilisateur,:motDePasse,:email)';
 }
+
 /**
- * Upload le fichier sur le serveur
+ * Upload le fichier sur le dossier du serveur
  */
-function UploadFichier() {
+function UploadFichierVideo($Video) {
+    $uploaddir = './videos/';
+    $path_info = pathinfo($Video['video']['name']);
+    $extension = $path_info['extension'];
+    $temp_file_name = uniqid(true) . '.' . $extension;
+    $uploadfile = $uploaddir . $temp_file_name;
+    move_uploaded_file($_FILES['video']['tmp_name'], $uploadfile);
     
+    return $uploadfile;
 }
 
 /**

@@ -32,7 +32,7 @@ and open the template in the editor.
         <div id="page" class="col-sm-12">
             <header class="navbar-fixed-top col-sm-12">
                 <h1 id="TitrePrincipal" class="col-sm-7">
-                    Site Vidéos
+                    <a href="./" >Site Vidéos</a>
                     <small>
                         <?= $titre; ?>
                     </small>
@@ -45,6 +45,7 @@ and open the template in the editor.
                 <div class="containerCenter col-sm-12 containerBorder ">
                     <ul class="nav nav-pills nav-stacked col-sm-12 ">
                         <?=$leftMenu;?>
+                        <a href="./index.php?action=uploader">Uploader</a>
                     </ul>
                 </div>
             </nav>

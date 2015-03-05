@@ -59,11 +59,18 @@ function connexion() {
 }
 
 function upload() {
-    if (isset($_POST['upload'])) {
-        $NomVideo = $_POST['nomVideo'];
-        $Description = $_POST['description'];
-        //UploadFichier($Video);
-        //UploadVideo($NomVideo, $Description);
+    if (isset($_SESSION['iduser'])) {
+        if (isset($_POST['upload'])) {
+            $NomVideo = $_POST['nomVideo'];
+            $Description = $_POST['description'];
+            $urlVideo = UploadFichierVideo($_FILES);
+            var_dump_pre($urlVideo);
+            UploadInfoVideo($NomVideo, $urlVideo, $Description, $_SESSION['iduser']);
+        }else {
+            require './vue/vueAccueil.php';
+        }
+    }else {
+        erreur('Vous n\'êtes pas connecté');
     }
     require './vue/vueAjouterVideo.php';
     var_dump_pre($_POST);

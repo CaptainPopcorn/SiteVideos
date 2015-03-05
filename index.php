@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 require_once './modele/ModeleAffichage.php';
 require_once('./Controleur/Controleur.php');
@@ -15,35 +16,42 @@ try {
                 throw new Exception("Cette video n'existe pas.");
             }
         }
-        
+
         // Check action  -> afficher la page d'inscription
         if ($_GET['action'] == 'inscription') {
-            inscription();
+            if (!isset($_SESSION["pseudo"])) {
+                inscription();
+            } else {
+                erreur('Vous êtes déja connecté !');
+            }
         }
         // Check action  -> l'utilisateur est inscrit
         if ($_GET['action'] == 'inscrit') {
             inscrit();
         }
-        
+
         // Check action  -> afficher affiche la page d'ajout de video
         if ($_GET['action'] == 'uploader') {
-            Affiche_AjouterVideo();
+            if (isset($_SESSION["pseudo"])) {
+                Affiche_AjouterVideo();
+            } else {
+                erreur('Vous devez être connecté pour afficher cette page');
+            }
         }
         // Check action  -> upload la video
         if ($_GET['action'] == 'upload') {
             upload();
         }
-        
-       // Check action  -> deconnecte l'utilisateur
+
+        // Check action  -> deconnecte l'utilisateur
         if ($_GET['action'] == 'deconnexion') {
             deconnexion();
         }
-        
+
         // Check action  -> connecte l'utilisateur
         if ($_GET['action'] == 'login') {
             connexion();
         }
-        
     } else {
         accueil();  // action par défaut
     }

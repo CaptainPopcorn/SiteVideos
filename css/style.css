@@ -42,3 +42,7 @@ li{
 .form-section{
     margin: 0 auto;
 }
+
+#TitrePrincipal a {
+    text-decoration:none;
+}
