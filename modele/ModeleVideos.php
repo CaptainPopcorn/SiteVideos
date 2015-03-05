@@ -113,5 +113,11 @@ function TagsAssociatif() {
     }
     return $TagsAssociatif;
 }
-
+function GetLastVideos($n){
+    $pdo = ConnexionBD();
+    $query = 'SELECT * FROM (
+    SELECT * FROM t_videos ORDER BY idUtilisateur DESC LIMIT '.$n.'
+    ) sub
+    ORDER BY idUtilisateur DESC';
+}
 ?>
