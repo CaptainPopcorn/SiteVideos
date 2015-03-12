@@ -1,5 +1,6 @@
 <?php $titre = 'Ajouter une video'; ?>
 <?php $TopContent = AfficheFormInscription(); ?>
+<?php $leftMenu = AfficheTopVideos(3); ?>
 <?php $tableauTags = TagsAssociatif(); ?>
 <?php ob_start(); ?>
 

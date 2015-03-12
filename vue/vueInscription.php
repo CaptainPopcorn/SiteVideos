@@ -1,6 +1,7 @@
 <?php 
     $titre = 'Page Inscription';
     $TopContent = AfficheFormInscription();
+    <?php $leftMenu = AfficheTopVideos(3); ?>
     $leftMenu = '';
     $erreur = '';
     if (!empty($_SESSION['erreur'])){

@@ -1,4 +1,5 @@
 <?php $TopContent = AfficheFormInscription(); ?>
+<?php $leftMenu = AfficheTopVideos(3); ?>
 <?php $titre = 'Page video'; ?>
 
 <?php ob_start(); ?>
