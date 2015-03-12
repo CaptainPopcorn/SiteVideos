@@ -14,7 +14,7 @@ function accueil() {
 // Affiche les détails sur un billet
 function video($idVideo) {
     $video = getVideo($idVideo);
-    //var_dump_pre($video);
+    //$commentaires = getCommentaires($idVideo);
     //$commentaires = getCommentaires($idVideo);
     require './vue/vueVideo.php';
 }

@@ -70,4 +70,11 @@ div .containerCenter{
 .video{
     padding-top: 10%;
     height: 30%;
+    padding-left: 5%;
+}
+.video_section{
+    float: left;
+}
+.video_section_right{
+    padding-left: 5%;
 }

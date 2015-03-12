@@ -40,7 +40,14 @@ function AfficheFormInscription() {
          $nbVideo++;
          $leftMenu .= '<div class="video" >'
                     . '<h4><a href="./index.php?action=video&id='.$video['idVideo'].'">'.$video['nomVideo'].'</a></h4>'
+                    . '<div class="video_section">'
                     . '<img src="'.$video['urlMiniature'].'" alt="vidéo numéro : '.$nbVideo.'" height="100" width="100">'
+                    . '<p>note : '.$video['avg_note'].'</p>'
+                    .'</div>'
+                    . '<div class="video_section video_section_right">'
+                    . '<p>'.'Description :'.'</p>'
+                    . '<p>'.$video['Description'].'</p>'
+                    .'</div>'
                     .'</div>';
      }
      return $leftMenu;

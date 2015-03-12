@@ -6,7 +6,7 @@ require_once './modele/ModeleVideos.php';
 
 // Affiche la liste de tous les billets du blog
 function accueil() {
-    //$videos = getVideos();
+    $videos = getVideos();
     //var_dump_pre($videos);
     require './vue/vueAccueil.php';
 }
@@ -17,8 +17,7 @@ function video($idVideo) {
 <<<<<<< HEAD
     //var_dump_pre($video);
 =======
-    var_dump_pre($video);
->>>>>>> SiteVideos : Nouvelle base de donnée / Affiche (en partie) la liste des videos / Afficher (en partie) une video
+>>>>>>> SiteVideos: Ajout des informations des videos dans le Top Vidéos
     //$commentaires = getCommentaires($idVideo);
     require './vue/vueVideo.php';
 }
