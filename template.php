@@ -43,9 +43,8 @@ and open the template in the editor.
             </header>
             <nav class="col-sm-3">
                 <div class="containerCenter col-sm-12 containerBorder ">
-                    <ul class="nav nav-pills nav-stacked col-sm-12 ">
+                    <ul class="nav nav-pills nav-stacked col-sm-12 containerVideos">
                         <?=$leftMenu;?>
-                        <a href="./index.php?action=uploader">Uploader</a>
                     </ul>
                 </div>
             </nav>

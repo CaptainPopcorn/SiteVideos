@@ -1,6 +1,8 @@
 <?php $titre = 'Page Accueil'; ?>
 <?php $TopContent = AfficheFormInscription(); ?>
+<?php $leftMenu = AfficheTopVideos(3); ?>
 <?php ob_start(); ?>
+
 <h1> Liste des vidéos </h1>
 <?php for ($i = 0; $i < sizeof($videos); $i++) { ?>
     <h1> <?= $videos[0]['nomVideo'] ?></h1>

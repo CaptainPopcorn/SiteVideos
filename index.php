@@ -1,5 +1,5 @@
 <?php
-
+// FFmpeg http://www.kookyoo.net/blog/developpement/ffmpeg-vignettes-video-extraire-encodage-image-jpg-00001084 miniature auto
 session_start();
 require_once './modele/ModeleAffichage.php';
 require_once('./Controleur/Controleur.php');

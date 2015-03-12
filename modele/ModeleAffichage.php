@@ -25,9 +25,24 @@ function AfficheFormInscription() {
             </form>';
     } else {
         $TopContent = '<h3> Bienvenu <a class="btn-link" href"#">'.$_SESSION['pseudo'].'</a> - '
-                . '<small><a class="btn-link" href="./index.php?action=deconnexion"> Deconnect</a></small> </h3> ';
-    }
-    
+                . '<small><a class="btn-link" href="./index.php?action=deconnexion"> Deconnect</a></small> </h3>'
+                . '<a href="./index.php?action=uploader">Uploader</a> ';
+    }    
     return $TopContent;
 }
+ function AfficheTopVideos($nbVideos){
+     $videos = GetTopVideos($nbVideos);
+     $leftMenu = '<div class="titreVideo" >'
+                    . '<h2>Top Vidéos</h2>'
+                    .'</div>';
+     $nbVideo = 0;
+     foreach($videos as $video){
+         $nbVideo++;
+         $leftMenu .= '<div class="video" >'
+                    . '<h4><a href="./index.php?action=video&id='.$video['idVideo'].'">'.$video['nomVideo'].'</a></h4>'
+                    . '<img src="'.$video['urlMiniature'].'" alt="vidéo numéro : '.$nbVideo.'" height="100" width="100">'
+                    .'</div>';
+     }
+     return $leftMenu;
+ }
 ?>
