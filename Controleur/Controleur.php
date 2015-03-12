@@ -6,15 +6,15 @@ require_once './modele/ModeleVideos.php';
 
 // Affiche la liste de tous les billets du blog
 function accueil() {
-    $videos = getVideos();
-    var_dump_pre($videos);
+    //$videos = getVideos();
+    //var_dump_pre($videos);
     require './vue/vueAccueil.php';
 }
 
 // Affiche les détails sur un billet
 function video($idVideo) {
     $video = getVideo($idVideo);
-    var_dump_pre($video);
+    //var_dump_pre($video);
     //$commentaires = getCommentaires($idVideo);
     require './vue/vueVideo.php';
 }
