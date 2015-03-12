@@ -6,7 +6,7 @@ require_once './modele/ModeleVideos.php';
 
 // Affiche la liste de tous les billets du blog
 function accueil() {
-    //$videos = getVideos();
+    $videos = getVideos();
     //var_dump_pre($videos);
     require './vue/vueAccueil.php';
 }
