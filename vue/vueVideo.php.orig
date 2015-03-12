@@ -1,0 +1,21 @@
+<?php $TopContent = AfficheFormInscription(); ?>
+<?php $titre = 'Page video'; ?>
+
+<?php ob_start(); ?>
+<div class="Videos">
+    <video width="560" height="315" controls>
+<<<<<<< HEAD
+        <source src="<?= $video['urlVideo'] ?>" type="video/mp4">
+=======
+        <source src="videos/1.mp4" type="video/mp4">
+>>>>>>> SiteVideos : Nouvelle base de donnée / Affiche (en partie) la liste des videos / Afficher (en partie) une video
+    </video>
+
+
+    <h1> <?= $video['nomVideo'] ?></h1>
+</div>
+
+<?php $contenu = ob_get_clean(); ?>
+<?php require 'template.php'; ?>
+
+
