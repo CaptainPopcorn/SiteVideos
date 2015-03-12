@@ -47,6 +47,15 @@ li{
     text-decoration:none;
 }
 
+.ListeVideos {
+    padding: 10px;
+    background-color: purple;
+}
+
+
+.miniature {
+    float: left;
+}
 div .containerCenter{
     height: 100%;
 }

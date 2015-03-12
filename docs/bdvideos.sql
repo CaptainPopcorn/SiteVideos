@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 05 Mars 2015 à 09:15
+-- Généré le :  Jeu 12 Mars 2015 à 07:51
 -- Version du serveur :  5.6.15-log
 -- Version de PHP :  5.4.24
 
@@ -124,15 +124,15 @@ CREATE TABLE IF NOT EXISTS `t_videos` (
   `Description` text NOT NULL,
   `idUtilisateur` int(11) NOT NULL,
   `DateSortie` date NOT NULL,
+  `urlMiniature` varchar(250) NOT NULL,
   PRIMARY KEY (`idVideo`),
   UNIQUE KEY `urlVideo` (`urlVideo`),
   KEY `FK_t_Videos_idUtilisateur` (`idUtilisateur`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Contenu de la table `t_videos`
 --
-
 
 --
 -- Contraintes pour les tables exportées

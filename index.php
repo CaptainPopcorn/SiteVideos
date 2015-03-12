@@ -11,7 +11,8 @@ try {
         if ($_GET['action'] == 'video') {
             // Check l'id dans l'url
             if (isset($_GET['id'])) {
-                video($_GET['id']);
+                var_dump_pre($_GET['id']);
+                Video($_GET['id']); //Appel l'affichage de la video
             } else {
                 throw new Exception("Cette video n'existe pas.");
             }

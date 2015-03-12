@@ -28,7 +28,7 @@ function getVideo($idVideo) {
     $query = "SELECT * FROM t_videos WHERE idVideo = :id";
     $statement = $pdo->prepare($query);
     $statement->execute(array("id" => $idVideo));
-    $statement = $statement->fetchAll();
+    $statement = $statement->fetch();
     return $statement;
 }
 
@@ -43,7 +43,7 @@ function getCommentaire($idVideo) {
     $query = "SELECT * FROM commenter WHERE idVideo = :id NATRURAL JOIN t_utilisateurs";
     $statement = $pdo->prepare($query);
     $statement->execute(array("id" => $idVideo));
-    $statement = $statement->fetchAll();
+    $statement = $statement->fetch();
     return $statement;
 }
 
