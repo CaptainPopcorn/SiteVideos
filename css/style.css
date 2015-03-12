@@ -48,8 +48,9 @@ li{
 }
 
 .ListeVideos {
-    padding: 10px;
-    background-color: purple;
+    margin-top: 5px;
+    //background-color: purple;
+    height: 60%;
 }
 
 

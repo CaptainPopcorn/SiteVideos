@@ -3,7 +3,7 @@
 <?php $titre = 'Page video'; ?>
 
 <?php ob_start(); ?>
-<div class="Videos">
+<div class="video">
     <video width="560" height="315" controls>
         <source src="<?= $video['urlVideo'] ?>" type="video/mp4">
     </video>
