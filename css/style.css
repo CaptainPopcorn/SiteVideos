@@ -50,8 +50,13 @@ li{
 
 .ListeVideos {
     margin-top: 5px;
-    //background-color: purple;
-    height: 60%;
+    //height: 60%;
+    width: 100%;
+    
+}
+
+.infosVideo {
+    height : 200px;
 }
 
 
