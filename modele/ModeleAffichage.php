@@ -55,10 +55,8 @@ function AfficheTopVideos($nbVideos) {
                 . '<p>' . 'Description :' . '</p>'
                 . '<p>' . $video['Description'] . '</p>'
                 . '</div>'
-                . '<div class="starRating video_stars">'
-                . '<p>'.$video['avg_note']
-                . '<input id="rating1" type="radio" name="rating" value="1">
-                   <label for="rating1"><span>1</span></label>'
+                . '<div class="video_stars">'
+                . '<p>note : '.$video['avg_note']
                 . '</p>'
                 . '</div>'
                 . '</div>';
