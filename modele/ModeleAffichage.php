@@ -39,6 +39,12 @@ function AfficheTopVideos($nbVideos) {
             . '</div>';
     $nbVideo = 0;
     foreach ($videos as $video) {
+        $avg_note = GetAVGNoteFromVideo($video['idVideo']);
+        if (!empty($avg_note)){
+          $avg_note = round($avg_note * 2);
+        } else {
+            $avg_note = false;
+        }
         $nbVideo++;
         $leftMenu .= '<div class="video" >'
                 . '<h4><a href="./index.php?action=video&id=' . $video['idVideo'] . '">' . $video['nomVideo'] . '</a></h4>'
@@ -66,7 +72,7 @@ function AfficheTopVideos($nbVideos) {
                     <input id="rating5" type="radio" name="rating" value="5">
                     <label for="rating5"><span>5</span></label>
                   </div>
-                  </div>' 
+                  </div>'
                 . $video['avg_note'] . '</p>'
                 . '</div>'
                 . '<div class="video_section video_section_right">'

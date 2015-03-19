@@ -5,6 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
+
     if (empty($titre)){
         $titre = '';
     }
@@ -50,7 +51,7 @@ and open the template in the editor.
                 </div>
             </nav>
             <section class="col-sm-9 underNavTop">
-                <div class="containerCenter col-lg-4 col-lg-offset-4 containerBorder" id="principal">
+                <div class="containerCenter col-lg-8 col-lg-offset-4 containerBorder" id="principal">
                     <?=$contenu;?>
                 </div>
             </section>

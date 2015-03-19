@@ -147,4 +147,15 @@ function GetTopVideos($n){
     $statement = $statement->fetchAll();
     return $statement;
 }
+
+function GetAVGNoteFromVideo($id){
+    $pdo = ConnexionBD();
+    $query = 'SELECT AVG(Note) as avg
+            FROM noter
+            WHERE idVideo='.$id;
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $statement = $statement->fetch();
+    return $statement['avg'];    
+}
 ?>
