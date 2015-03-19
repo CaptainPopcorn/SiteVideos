@@ -4,7 +4,7 @@
 
 <?php ob_start(); ?>
 <div class="video">
-    <video width="560" height="315" controls>
+    <video width="975" height="472" controls>
         <source src="<?= $video['urlVideo'] ?>" type="video/mp4">
     </video>
 
