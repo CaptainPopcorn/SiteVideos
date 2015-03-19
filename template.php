@@ -25,6 +25,7 @@ and open the template in the editor.
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/ratingstar.css" rel="stylesheet">
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
