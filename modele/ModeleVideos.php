@@ -79,7 +79,7 @@ function UploadInfoVideo($nomVideo, $urlVideo, $urlMiniature, $Description, $idU
         'idUtilisateur' => $idUtilisateur,
         'DateSortie' => $date));
     $statement = $statement->fetchAll();
-    return $statement;
+    return $pdo->lastinsertid();
 
 
     // $query = 'INSERT INTO t_utilisateurs (nomUtilisateur, motDePasse, email)
@@ -123,10 +123,11 @@ function TagsAssociatif() {
     }
     return $TagsAssociatif;
 }
-function GetLastVideos($n){
+
+function GetLastVideos($n) {
     $pdo = ConnexionBD();
     $query = 'SELECT * FROM (
-    SELECT * FROM t_videos ORDER BY idUtilisateur DESC LIMIT '.$n.'
+    SELECT * FROM t_videos ORDER BY idUtilisateur DESC LIMIT ' . $n . '
     ) sub
     ORDER BY idUtilisateur DESC';
     $statement = $pdo->prepare($query);
@@ -135,27 +136,41 @@ function GetLastVideos($n){
     return $statement;
 }
 
-function GetTopVideos($n){
+function GetTopVideos($n) {
     $pdo = ConnexionBD();
     $query = 'SELECT *, AVG(Note) as avg_note
             FROM noter
             NATURAL JOIN t_videos
             GROUP BY nomVideo
-            ORDER BY avg_note DESC LIMIT '.$n;
+            ORDER BY avg_note DESC LIMIT ' . $n;
     $statement = $pdo->prepare($query);
     $statement->execute();
     $statement = $statement->fetchAll();
     return $statement;
 }
 
-function GetAVGNoteFromVideo($id){
+function GetAVGNoteFromVideo($id) {
     $pdo = ConnexionBD();
     $query = 'SELECT AVG(Note) as avg
             FROM noter
-            WHERE idVideo='.$id;
+            WHERE idVideo=' . $id;
     $statement = $pdo->prepare($query);
     $statement->execute();
     $statement = $statement->fetch();
-    return $statement['avg'];    
+    return $statement['avg'];
 }
+
+Function UploadTagsVideo($id, $tags) {
+    $pdo = ConnexionBD();
+
+    foreach ($tags as $tag) {
+        $query = 'INSERT INTO definir VALUES(:idTag, :idUtilisateur)';
+        $statement = $pdo->prepare($query);
+        $statement->execute(array("idTag" => $tag, 
+            "idUtilisateur" => $id));
+        $statement = $statement->fetch();
+    }
+    return;
+}
+
 ?>

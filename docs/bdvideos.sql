@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 12 Mars 2015 à 07:51
+-- Généré le :  Jeu 19 Mars 2015 à 11:36
 -- Version du serveur :  5.6.15-log
 -- Version de PHP :  5.4.24
 
@@ -44,9 +44,9 @@ CREATE TABLE IF NOT EXISTS `commenter` (
 
 CREATE TABLE IF NOT EXISTS `definir` (
   `idTag` int(11) NOT NULL,
-  `idUtilisateur` int(11) NOT NULL,
-  PRIMARY KEY (`idTag`,`idUtilisateur`),
-  KEY `FK_Definir_idUtilisateur` (`idUtilisateur`)
+  `idVideo` int(11) NOT NULL,
+  PRIMARY KEY (`idTag`,`idVideo`),
+  KEY `idVideo` (`idVideo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -62,6 +62,14 @@ CREATE TABLE IF NOT EXISTS `noter` (
   PRIMARY KEY (`idVideo`,`idUtilisateur`),
   KEY `FK_Noter_idUtilisateur` (`idUtilisateur`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `noter`
+--
+
+INSERT INTO `noter` (`Note`, `idVideo`, `idUtilisateur`) VALUES
+(3, 4, 1),
+(1, 5, 1);
 
 -- --------------------------------------------------------
 
@@ -128,11 +136,21 @@ CREATE TABLE IF NOT EXISTS `t_videos` (
   PRIMARY KEY (`idVideo`),
   UNIQUE KEY `urlVideo` (`urlVideo`),
   KEY `FK_t_Videos_idUtilisateur` (`idUtilisateur`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Contenu de la table `t_videos`
 --
+
+INSERT INTO `t_videos` (`idVideo`, `nomVideo`, `urlVideo`, `Description`, `idUtilisateur`, `DateSortie`, `urlMiniature`) VALUES
+(4, 'test', './videos/15501587621114.mp4', 'test', 1, '2015-03-12', './miniatures/155015876218e4.jpg'),
+(5, 'sdfgss', './videos/155016337ae8bc.mp4', 'sadfsdf', 1, '2015-03-12', './miniatures/155016337af85c.jpg'),
+(6, 'aefasdf', './videos/1550a74ca73bd8.mp4', 'sydfasdfasdf', 1, '2015-03-19', './miniatures/1550a74ca74791.png'),
+(7, '1234567890', './videos/1550a992642070.mp4', 'srfgs', 1, '2015-03-19', './miniatures/1550a992642840.png'),
+(8, 'sdg<sdgfSDGFADFGSDFGHASDRG', './videos/1550a9afcf3414.mp4', 'ASDGSDFGASDFAS', 1, '2015-03-19', './miniatures/1550a9afcf3be4.png'),
+(9, 'test vide3o', './videos/1550aa59375c63.mp4', 'test video', 1, '2015-03-19', './miniatures/1550aa59376feb.png'),
+(10, 'test vide3o', './videos/1550aa5f357216.mp4', 'test video', 1, '2015-03-19', './miniatures/1550aa5f3579e7.png'),
+(11, 'test vide3o', './videos/1550aa614b170b.mp4', 'test video', 1, '2015-03-19', './miniatures/1550aa614b1edb.png');
 
 --
 -- Contraintes pour les tables exportées
@@ -149,8 +167,8 @@ ALTER TABLE `commenter`
 -- Contraintes pour la table `definir`
 --
 ALTER TABLE `definir`
-  ADD CONSTRAINT `FK_Definir_idTag` FOREIGN KEY (`idTag`) REFERENCES `t_tags` (`idTag`),
-  ADD CONSTRAINT `FK_Definir_idUtilisateur` FOREIGN KEY (`idUtilisateur`) REFERENCES `t_utilisateurs` (`idUtilisateur`);
+  ADD CONSTRAINT `definir_ibfk_1` FOREIGN KEY (`idVideo`) REFERENCES `t_videos` (`idVideo`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `FK_Definir_idTag` FOREIGN KEY (`idTag`) REFERENCES `t_tags` (`idTag`);
 
 --
 -- Contraintes pour la table `noter`

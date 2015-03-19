@@ -65,14 +65,16 @@ function upload() {
         if (isset($_POST['upload'])) {
             $NomVideo = $_POST['nomVideo'];
             $Description = $_POST['description'];
-            
+            $Tags = $_POST['Tags'];
             $video = $_FILES['video'];
             $urlVideo = UploadFichier($video, 'video'); // Upload video
             
             $miniature = $_FILES['miniature'];
             $urlMiniature = UploadFichier($miniature, 'miniature'); // upload miniature video
             
-            UploadInfoVideo($NomVideo, $urlVideo, $urlMiniature, $Description, $_SESSION['iduser']);
+            $LastInsertId = UploadInfoVideo($NomVideo, $urlVideo, $urlMiniature, $Description, $_SESSION['iduser']);
+            
+            UploadTagsVideo($LastInsertId, $Tags);
         }else {
             require './vue/vueAccueil.php';
         }
