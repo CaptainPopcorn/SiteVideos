@@ -8,10 +8,11 @@ html, body {
     height: 100%;
     
     padding: 0px;
+    padding-bottom: 5%;
 }
 .underNavTop{
     min-height: 100%;
-    padding-top: 8%;
+    //padding-top: 8%;
 }
 header{
     min-height: 10%;
@@ -22,6 +23,8 @@ header{
 }
 section{
     overflow: auto;
+    margin-top: 5%;
+    max-height: 75%;
 }
 nav{
     background-color: #202020;
@@ -75,13 +78,21 @@ div .containerCenter{
     text-align: center;
 }
 .video{
+    width: 100%;
     padding-top: 10%;
     height: 30%;
     padding-left: 5%;
 }
 .video_section{
     float: left;
+    height: 60%;
+    width: 50%;
 }
 .video_section_right{
     padding-left: 5%;
+    height: 60%;
+    width: 50%;
+}
+section .containerCenter{
+    margin-top: 0%;
 }

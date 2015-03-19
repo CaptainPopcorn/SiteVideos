@@ -51,7 +51,7 @@ and open the template in the editor.
                 </div>
             </nav>
             <section class="col-sm-9 underNavTop">
-                <div class="containerCenter col-lg-8 col-lg-offset-4 containerBorder" id="principal">
+                <div class="containerCenter col-lg-12 containerBorder" id="principal">
                     <?=$contenu;?>
                 </div>
             </section>
