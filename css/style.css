@@ -15,6 +15,7 @@ html, body {
 }
 header{
     min-height: 10%;
+    max-height: 24%;
     background-color: #202020;
     border: 1px solid #ddd;
     //text-align: center;
