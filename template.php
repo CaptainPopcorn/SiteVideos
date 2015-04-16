@@ -34,7 +34,7 @@ and open the template in the editor.
         <div id="page" class="col-sm-12">
             <header class="navbar-fixed-top col-sm-12">
                 <h1 id="TitrePrincipal" class="col-sm-7">
-                    <a href="./" >Site Vidéos</a>
+                    <a href="./" >VideoTech</a>
                     <small>
                         <?= $titre; ?>
                     </small>
