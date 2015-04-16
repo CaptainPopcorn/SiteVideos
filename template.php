@@ -32,7 +32,7 @@ and open the template in the editor.
     </head>
     <body>
         <div id="page" class="col-sm-12">
-            <header class="navbar-fixed-top col-sm-12">
+            <header class="col-sm-12">
                 <h1 id="TitrePrincipal" class="col-sm-7">
                     <a href="./" >VideoTech</a>
                     <small>
@@ -43,15 +43,15 @@ and open the template in the editor.
                 
                 
             </header>
-            <nav class="col-sm-3">
+            <nav class="col-sm-4">
                 <div class="containerCenter col-sm-12 containerBorder ">
                     <ul class="nav nav-pills nav-stacked col-sm-12 containerVideos">
                         <?=$leftMenu;?>
                     </ul>
                 </div>
             </nav>
-            <section class="col-sm-9 underNavTop">
-                <div class="containerCenter col-lg-8 col-lg-offset-2 containerBorder" id="principal">
+            <section class="col-sm-8 underNavTop">
+                <div class="containerCenter col-lg-12 containerBorder" id="principal">
                     <?=$contenu;?>
                 </div>
             </section>
